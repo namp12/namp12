@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&pause=1000&color=A9B1D6&center=true&vCenter=true&width=500&lines=Building+digital+ecosystems.;Turning+data+into+insights.;Designing+minimalist+backends." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&pause=1000&color=A9B1D6&center=true&vCenter=true&width=600&lines=Learning+Backend+Development;Exploring+AI+%26+Machine+Learning;Advancing+in+DevOps+Practices;Aspiring+Database+Administrator" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -12,7 +12,6 @@
 
 ---
 
-### 📊 Performance Analytics
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=namp12&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&include_all_commits=true" width="48%" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=namp12&theme=tokyonight&hide_border=true" width="48%" />
@@ -24,7 +23,6 @@
 
 ---
 
-### 🌙 Coding Midnight
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=namp12&theme=tokyonight" width="100%" />
 </p>
@@ -37,7 +35,6 @@
 
 ---
 
-### 🔗 Get In Touch
 <p align="center">
   <a href="https://facebook.com/phuongnam"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
   <a href="mailto:nam.SE1101@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
