@@ -6,9 +6,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=24&pause=1000&color=A9B1D6&center=true&vCenter=true&width=500&lines=Building+digital+ecosystems.;Turning+data+into+insights.;Designing+minimalist+backends." alt="Typing SVG" />
 </p>
 
----
-
-### 🐍 The Commit Hunter
 <p align="center">
   <img src="https://raw.githubusercontent.com/namp12/namp12/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" width="100%" />
 </p>
