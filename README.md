@@ -1,23 +1,39 @@
-# Hi there, I'm Phuong Nam 👋
+name: generate animation
 
-I'm an Information Systems student at Dai Nam University, focused on building efficient back-end solutions and exploring the world of Data Science.
+on:
+  # Chạy mỗi 24 tiếng
+  schedule:
+    - cron: "0 */24 * * *" 
+  
+  # Cho phép chạy thủ công bất cứ lúc nào
+  workflow_dispatch:
+  
+  # Chạy mỗi khi bạn push code vào nhánh main
+  push:
+    branches:
+    - main
 
-### 🛠 Tech Stack & Focus
-* **Languages:** Python, JavaScript, C#
-* **Back-end:** Flask, Django, RESTful API
-* **Data:** SQL Server, NumPy, Pandas, Scikit-Learn
-* **Current Goal:** Deepening my knowledge in Machine Learning and System Architecture.
-
----
-
-### 🐍 My Contributions
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/namp12/namp12/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/namp12/namp12/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/namp12/namp12/output/github-contribution-grid-snake.svg">
-</picture>
-
----
-
-### 📫 Let's Connect
-[Facebook](https://facebook.com/phuongnam) • [Zalo](https://zalo.me/0867518241) • [Gmail](mailto:nam.SE1101@gmail.com)
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
